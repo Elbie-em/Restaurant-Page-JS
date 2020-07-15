@@ -1,4 +1,5 @@
 import homePage from './home';
+import ourServices  from './services';
 
 
 const container = document.getElementById('content');
@@ -20,7 +21,7 @@ const navELement = () => {
 
   const brand = document.createElement('a');
   brand.id = 'nav-brand';
-  brand.classList.add('navbar-brand','text-light', 'custom-font-a', 'ml-2');
+  brand.classList.add('navbar-brand','text-light', 'custom-font-a', 'ml-2', 'medium-font');
   brand.innerHTML = "El's Kitchen";
   
   navLeft.appendChild(brand);
@@ -35,6 +36,7 @@ const navELement = () => {
   ourServicesLink.id = 'our-services';
   ourServicesLink.className = linkClass;
   ourServicesLink.innerHTML = 'OUR SERVICES';
+  ourServicesLink.onclick = () => { ourServices();}
 
   navRight.appendChild(ourServicesLink);
 
