@@ -1,5 +1,7 @@
-const container = document.getElementById('content');
+import homePage from './home';
 
+
+const container = document.getElementById('content');
 const navELement = () => {
   
   const nav = document.createElement('nav');
@@ -60,32 +62,7 @@ const homeContainer = () => {
   introContainer.className = 'container mt-3 p-5 text-center';
   introContainer.style.height = '500px';
 
-  const logo = document.createElement('img');
-  logo.src = './dist/assets/images/logo.png';
-  logo.className = 'heading-logo'
-  introContainer.appendChild(logo);
-
-  const heading = document.createElement('h1');
-  heading.className = 'custom-font-a text-white big-font'
-  heading.innerHTML = "Welcome to El's Kitchen"
-
-  introContainer.appendChild(heading);
-
-  const missionStat = document.createElement('p');
-  missionStat.className = 'custom-font-b text-white medium-font';
-  missionStat.innerHTML = `We imagine a world where there’s no such thing as a bad meal from our highly trained chefs,all our customers leave happily.<br> We Serve Londons best cuisine!`;
-
-  introContainer.appendChild(missionStat);
-
-  const reserveButton = document.createElement('button');
-  reserveButton.id = 'reserve-btn';
-  reserveButton.className = "btn btn-secondary text-white custom-font-b"
-  reserveButton.innerHTML = 'Make Your Reservation';
-
-  introContainer.appendChild(reserveButton);
-
   container.appendChild(introContainer);
-
 };
 
 
@@ -93,6 +70,7 @@ const homeContainer = () => {
 const render = () => {
   navELement();
   homeContainer();
+  homePage();
 }
 
 
