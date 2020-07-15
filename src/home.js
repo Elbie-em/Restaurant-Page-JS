@@ -20,7 +20,7 @@ const homePage = () => {
 
   const reserveButton = document.createElement('button');
   reserveButton.id = 'reserve-btn';
-  reserveButton.className = "btn btn-secondary text-white custom-font-b"
+  reserveButton.className = "btn btn-secondary text-white custom-font-b op"
   reserveButton.innerHTML = 'Make Your Reservation';
 
   introContainer.appendChild(reserveButton);
