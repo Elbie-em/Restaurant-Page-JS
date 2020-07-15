@@ -1,10 +1,32 @@
+body, html{
+  height: 100%;
+}
+
+.op {
+  opacity: 0.8;
+}
+
+nav {
+  opacity: 0.8;
+}
+
+.bg-back {
+  background-image: url("https://www.bombaybrasseriebirmingham.co.uk/wp-content/uploads/2014/05/indian-food-served-on-table.jpg");
+  height: 100%;
+  background-position: center;
+}
+
+.cont {
+  height: 100%;
+  overflow-y: auto;
+}
+
 a:hover {
   cursor: pointer;
 }
 
 .custom-font-a {
   font-family: 'Clicker Script', cursive;
-  font-size: 25px;
 }
 
 .custom-font-b {
@@ -14,4 +36,16 @@ a:hover {
 .logo {
   height: 40px;
   width: auto;
+}
+
+.heading-logo {
+  height: 180px;
+}
+
+.big-font {
+  font-size: 80px;
+}
+
+.medium-font {
+  font-size: 25px;
 }
