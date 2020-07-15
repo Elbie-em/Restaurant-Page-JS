@@ -1,4 +1,17 @@
+a:hover {
+  cursor: pointer;
+}
+
 .custom-font-a {
   font-family: 'Clicker Script', cursive;
   font-size: 25px;
+}
+
+.custom-font-b {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
 }
