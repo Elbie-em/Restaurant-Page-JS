@@ -8,7 +8,7 @@ const navELement = () => {
   
   const nav = document.createElement('nav');
   nav.id = 'nav-bar';
-  nav.classList.add('navbar', 'navbar-light', 'bg-dark','d-flex','flex-row','justify-content-between');
+  nav.classList.add('navbar', 'navbar-light', 'bg-dark','d-flex','flex-row','justify-content-between', 'fixed-top');
 
   container.appendChild(nav);
 
@@ -63,7 +63,7 @@ const navELement = () => {
 const homeContainer = () => {
   const introContainer = document.createElement('div');
   introContainer.id = 'intro';
-  introContainer.className = 'container mt-3 p-5 text-center';
+  introContainer.className = 'container p-5 text-center';
   introContainer.style.height = '500px';
 
   container.appendChild(introContainer);
