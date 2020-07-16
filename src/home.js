@@ -1,6 +1,9 @@
 const homePage = () => {
   const introContainer = document.getElementById('intro');
   introContainer.innerHTML = '';
+  introContainer.className = 'container mt-3 p-5 text-center';
+  introContainer.style.height = '500px';
+  
   const logo = document.createElement('img');
   logo.src = './dist/assets/images/logo.png';
   logo.className = 'heading-logo'
