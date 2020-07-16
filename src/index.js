@@ -1,5 +1,6 @@
 import homePage from './home';
 import ourServices  from './services';
+import restMenu from './menu';
 
 
 const container = document.getElementById('content');
@@ -23,7 +24,7 @@ const navELement = () => {
   brand.id = 'nav-brand';
   brand.classList.add('navbar-brand','text-light', 'custom-font-a', 'ml-2', 'medium-font');
   brand.innerHTML = "El's Kitchen";
-  
+  brand.onclick = () => {homePage();}
   navLeft.appendChild(brand);
 
   nav.appendChild(navLeft);
@@ -44,6 +45,7 @@ const navELement = () => {
   menuLink.id = 'menu';
   menuLink.className = linkClass;
   menuLink.innerHTML = 'MENU';
+  menuLink.onclick = () => { restMenu();}
 
   navRight.appendChild(menuLink);
 
@@ -67,14 +69,11 @@ const homeContainer = () => {
   container.appendChild(introContainer);
 };
 
-
-
 const render = () => {
   navELement();
   homeContainer();
   homePage();
 }
-
 
 window.onload = () => {
   render();
