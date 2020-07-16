@@ -57,3 +57,18 @@ a:hover {
   margin-right: auto;
   margin-left: auto;
 }
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.card-add {
+  height: 320px;
+}
+
+.mt-c {
+  margin-top: 63px;
+}
