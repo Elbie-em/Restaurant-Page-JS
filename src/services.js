@@ -1,7 +1,7 @@
 const ourServices = () => {
   const introContainer = document.getElementById('intro');
   introContainer.innerHTML = '';
-  introContainer.className = 'bg-white op text-center p-3'
+  introContainer.className = 'bg-white op text-center p-3 mt-c'
   introContainer.style.height = '600px';
 
   const heading = document.createElement('h1');
