@@ -1,6 +1,7 @@
 import homePage from './home';
 import ourServices  from './services';
 import restMenu from './menu';
+import reserve from './reserve'
 
 
 const container = document.getElementById('content');
@@ -53,6 +54,7 @@ const navELement = () => {
   reserveLink.id = 'reservations';
   reserveLink.className = linkClass;
   reserveLink.innerHTML = 'RESERVATIONS';
+  reserveLink.onclick = () => {reserve();}
 
   navRight.appendChild(reserveLink);
 
