@@ -1,3 +1,5 @@
+import clearContainer from './global'
+
 const restMenu = () => {
   const head = document.createElement('div');
   head.className = 'menu-head mb-3 p-5';
@@ -14,8 +16,7 @@ const restMenu = () => {
   head.appendChild(text);
   
   const introContainer = document.getElementById('intro');
-  introContainer.innerHTML = '';
-  introContainer.className = 'mt-3 p-5 text-center';
+  clearContainer(introContainer,'mt-3 p-5 text-center','500px');
 
   introContainer.appendChild(head);
 

@@ -1,8 +1,7 @@
+import clearContainer from './global'
 const ourServices = () => {
   const introContainer = document.getElementById('intro');
-  introContainer.innerHTML = '';
-  introContainer.className = 'bg-white op text-center p-3 mt-c'
-  introContainer.style.height = '600px';
+  clearContainer(introContainer,'bg-white op text-center p-3 mt-c','600px');
 
   const heading = document.createElement('h1');
   heading.className = 'custom-font-b text-dark';
@@ -80,8 +79,6 @@ const ourServices = () => {
   serviceIcons.appendChild(dn_div);
 
   introContainer.appendChild(serviceIcons);
-
-
 }
 
 export default ourServices;

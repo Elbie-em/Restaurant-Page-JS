@@ -1,8 +1,9 @@
+import reserve from "./reserve";
+import clearContainer from "./global";
+
 const homePage = () => {
   const introContainer = document.getElementById('intro');
-  introContainer.innerHTML = '';
-  introContainer.className = 'container mt-5 p-5 text-center';
-  introContainer.style.height = '500px';
+  clearContainer(introContainer,'container mt-5 p-5 text-center','500px');
   
   const logo = document.createElement('img');
   logo.src = './dist/assets/images/logo.png';
@@ -25,6 +26,7 @@ const homePage = () => {
   reserveButton.id = 'reserve-btn';
   reserveButton.className = "btn btn-secondary text-white custom-font-b op"
   reserveButton.innerHTML = 'Make Your Reservation';
+  reserveButton.onclick = () => { reserve();}
 
   introContainer.appendChild(reserveButton);
 

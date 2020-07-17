@@ -67,7 +67,6 @@ const homeContainer = () => {
   introContainer.id = 'intro';
   introContainer.className = 'container p-5 text-center';
   introContainer.style.height = '500px';
-
   container.appendChild(introContainer);
 };
 

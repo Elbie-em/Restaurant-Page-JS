@@ -1,8 +1,8 @@
+import clearContainer from './global'
+
 const reserve = () => {
   const introContainer = document.getElementById('intro');
-  introContainer.innerHTML = '';
-  introContainer.className = 'container text-center p-5 mt-c'
-  introContainer.style.height = '500px';
+  clearContainer(introContainer,'container text-center p-5 mt-c','500px');
 
   const heading = document.createElement('h3');
   heading.className = 'custom-font-b text-white pt-5'
