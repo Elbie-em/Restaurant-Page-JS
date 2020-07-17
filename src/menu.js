@@ -6,11 +6,16 @@ const restMenu = () => {
   heading.className = 'text-white custom-font-a';
   heading.innerHTML = 'OUR MENU';
 
-  head.appendChild(heading);
+  const text = document.createElement('p');
+  text.className = 'custom-font-b text-white'
+  text.innerHTML = "With a love for great food and innovation - we’ve always got something exciting to offer. From immersive wine tastings to blind folded dinners to disco brunches – we’ll make sure you don’t leave disappointed or hungry."
 
+  head.appendChild(heading);
+  head.appendChild(text);
+  
   const introContainer = document.getElementById('intro');
   introContainer.innerHTML = '';
-  introContainer.className = 'container-fluid mt-3 p-5 text-center';
+  introContainer.className = 'mt-3 p-5 text-center';
 
   introContainer.appendChild(head);
 
