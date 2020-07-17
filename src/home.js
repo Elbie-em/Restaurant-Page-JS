@@ -27,7 +27,7 @@ const homePage = () => {
 
   const reserveButton = document.createElement('button');
   reserveButton.id = 'reserve-btn';
-  reserveButton.className = 'btn btn-secondary text-white custom-font-b op';
+  reserveButton.className = 'btn btn-secondary text-white custom-font-b op mb-5';
   reserveButton.innerHTML = 'Make Your Reservation';
   reserveButton.onclick = () => { reserve(); };
 

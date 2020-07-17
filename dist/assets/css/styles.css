@@ -89,3 +89,53 @@ a:hover {
   width: 100%;
   background-color: #000000;
 }
+
+@media only screen and (max-width: 1229px) {
+  .menu-grid {
+    grid-template-columns: 1fr 1fr 1fr ;
+  }
+  .card-add {
+    margin-left: auto;
+    margin-right: auto;
+    width: 270px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .canc-sc {
+    overflow-y: hidden;
+  }
+}
+
+@media only screen and (max-width: 998px) {
+  .menu-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .card-add {
+    width: 270px;
+  }
+
+}
+
+@media only screen and (max-width: 679px) {
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+  .card-add {
+    width: 270px;
+  }
+  .menu-head {
+    height: 200px;
+  }
+  .big-font {
+    font-size: 60px;
+  }
+
+}
+
+@media only screen and (max-width: 580px) {
+  .control {
+    display: flex;
+    flex-direction: column;
+  }
+}

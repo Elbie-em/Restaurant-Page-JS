@@ -1,8 +1,9 @@
 import clearContainer from './global';
 
 const ourServices = () => {
+  document.getElementById('content').classList.add('canc-sc');
   const introContainer = document.getElementById('intro');
-  clearContainer(introContainer, 'bg-white op text-center p-3 mt-c', '600px');
+  clearContainer(introContainer, 'bg-white op text-center p-3 mt-c', '1500px');
 
   const heading = document.createElement('h1');
   heading.className = 'custom-font-b text-dark';
@@ -17,7 +18,7 @@ const ourServices = () => {
   introContainer.appendChild(description);
 
   const serviceIcons = document.createElement('div');
-  serviceIcons.className = 'container d-flex flex-row justify-content-between p-5';
+  serviceIcons.className = 'container control d-flex flex-sm-column flex-md-column flex-lg-row justify-content-between p-5';
 
   const bfDiv = document.createElement('div');
   bfDiv.className = 'd-flex flex-column';

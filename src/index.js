@@ -6,6 +6,7 @@ import '../dist/assets/css/styles.css';
 import Logo from '../dist/assets/images/logo.png';
 
 const container = document.getElementById('content');
+container.className = 'w-100 bg-back cont';
 const navELement = () => {
   const nav = document.createElement('nav');
   nav.id = 'nav-bar';
