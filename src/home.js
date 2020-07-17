@@ -1,13 +1,15 @@
 import reserve from "./reserve";
 import clearContainer from "./global";
 import '../dist/assets/css/styles.css';
+import Logo from '../dist/assets/images/logo.png';
+
 
 const homePage = () => {
   const introContainer = document.getElementById('intro');
   clearContainer(introContainer,'container mt-5 p-5 text-center','500px');
   
   const logo = document.createElement('img');
-  logo.src = './dist/assets/images/logo.png';
+  logo.src = Logo;
   logo.className = 'heading-logo'
   introContainer.appendChild(logo);
 
