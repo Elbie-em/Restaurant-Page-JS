@@ -1,5 +1,5 @@
 
-const clearContainer = (container,className, height) => {
+const clearContainer = (container, className, height) => {
   container.innerHTML = '';
   container.className = className;
   container.style.height = height;

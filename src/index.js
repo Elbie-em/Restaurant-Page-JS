@@ -1,16 +1,15 @@
 import homePage from './home';
-import ourServices  from './services';
+import ourServices from './services';
 import restMenu from './menu';
-import reserve from './reserve'
+import reserve from './reserve';
 import '../dist/assets/css/styles.css';
 import Logo from '../dist/assets/images/logo.png';
 
 const container = document.getElementById('content');
 const navELement = () => {
-  
   const nav = document.createElement('nav');
   nav.id = 'nav-bar';
-  nav.classList.add('navbar', 'navbar-light', 'bg-dark','d-flex','flex-row','justify-content-between', 'fixed-top');
+  nav.classList.add('navbar', 'navbar-light', 'bg-dark', 'd-flex', 'flex-row', 'justify-content-between', 'fixed-top');
 
   container.appendChild(nav);
 
@@ -24,22 +23,22 @@ const navELement = () => {
 
   const brand = document.createElement('a');
   brand.id = 'nav-brand';
-  brand.classList.add('navbar-brand','text-light', 'custom-font-a', 'ml-2', 'medium-font');
+  brand.classList.add('navbar-brand', 'text-light', 'custom-font-a', 'ml-2', 'medium-font');
   brand.innerHTML = "El's Kitchen";
-  brand.onclick = () => {homePage();}
+  brand.onclick = () => { homePage(); };
   navLeft.appendChild(brand);
 
   nav.appendChild(navLeft);
 
   const navRight = document.createElement('div');
 
-  const linkClass = 'custom-font-b navbar-brand text-white'
-  
+  const linkClass = 'custom-font-b navbar-brand text-white';
+
   const ourServicesLink = document.createElement('a');
   ourServicesLink.id = 'our-services';
   ourServicesLink.className = linkClass;
   ourServicesLink.innerHTML = 'OUR SERVICES';
-  ourServicesLink.onclick = () => { ourServices();}
+  ourServicesLink.onclick = () => { ourServices(); };
 
   navRight.appendChild(ourServicesLink);
 
@@ -47,7 +46,7 @@ const navELement = () => {
   menuLink.id = 'menu';
   menuLink.className = linkClass;
   menuLink.innerHTML = 'MENU';
-  menuLink.onclick = () => { restMenu();}
+  menuLink.onclick = () => { restMenu(); };
 
   navRight.appendChild(menuLink);
 
@@ -55,13 +54,12 @@ const navELement = () => {
   reserveLink.id = 'reservations';
   reserveLink.className = linkClass;
   reserveLink.innerHTML = 'RESERVATIONS';
-  reserveLink.onclick = () => {reserve();}
+  reserveLink.onclick = () => { reserve(); };
 
   navRight.appendChild(reserveLink);
 
   nav.appendChild(navRight);
-
-}
+};
 
 const homeContainer = () => {
   const introContainer = document.createElement('div');
@@ -75,7 +73,7 @@ const render = () => {
   navELement();
   homeContainer();
   homePage();
-}
+};
 
 window.onload = () => {
   render();
