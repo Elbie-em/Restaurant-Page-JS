@@ -1,5 +1,5 @@
 import clearContainer from './global'
-
+import '../dist/assets/css/styles.css';
 const reserve = () => {
   const introContainer = document.getElementById('intro');
   clearContainer(introContainer,'container text-center p-5 mt-c','500px');

@@ -1,5 +1,5 @@
 import clearContainer from './global'
-
+import '../dist/assets/css/styles.css';
 const restMenu = () => {
   const head = document.createElement('div');
   head.className = 'menu-head mb-3 p-5';

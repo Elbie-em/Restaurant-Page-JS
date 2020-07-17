@@ -2,7 +2,7 @@ import homePage from './home';
 import ourServices  from './services';
 import restMenu from './menu';
 import reserve from './reserve'
-
+import '../dist/assets/css/styles.css';
 
 const container = document.getElementById('content');
 const navELement = () => {

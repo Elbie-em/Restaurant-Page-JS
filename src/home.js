@@ -1,5 +1,6 @@
 import reserve from "./reserve";
 import clearContainer from "./global";
+import '../dist/assets/css/styles.css';
 
 const homePage = () => {
   const introContainer = document.getElementById('intro');
