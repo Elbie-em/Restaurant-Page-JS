@@ -7,7 +7,7 @@
 > Click [here](https://gallant-bell-11dd24.netlify.app/) for live demo
 
 # Screenshot
-![screenshot](./dist/89b9717c385e60075c9a8f93fdecbc8f.png)
+![screenshot](./dist/assets/images/screenshot.png)
 
 ## Built With
 - HTML & CSS
