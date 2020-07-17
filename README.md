@@ -7,7 +7,7 @@
 > Click [here](https://gallant-bell-11dd24.netlify.app/) for live demo
 
 # Screenshot
-![sample](capture.png)
+![screenshot](./dist/89b9717c385e60075c9a8f93fdecbc8f.png)
 
 ## Built With
 - HTML & CSS
@@ -17,7 +17,7 @@
 - eslint
 - style lint
 
-## Authors
+## Author
 
 👤 **Elbie Moonga**
 
