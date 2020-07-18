@@ -1,0 +1,141 @@
+body, html{
+  height: 100%;
+}
+
+.op {
+  opacity: 0.8;
+}
+
+nav {
+  opacity: 0.8;
+}
+
+.bg-back {
+  background-image: url("https://www.bombaybrasseriebirmingham.co.uk/wp-content/uploads/2014/05/indian-food-served-on-table.jpg");
+  height: 100%;
+  background-position: center;
+}
+
+.cont {
+  height: 100%;
+  overflow-y: auto;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.custom-font-a {
+  font-family: 'Clicker Script', cursive;
+}
+
+.custom-font-b {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+.heading-logo {
+  height: 180px;
+}
+
+.big-font {
+  font-size: 80px;
+}
+
+.medium-font {
+  font-size: 26px;
+}
+
+.service-icon {
+  height: 150px;
+  width: 150px;
+  margin-bottom: 25px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.card-add {
+  height: 360px;
+}
+
+.card-img {
+  height: 185px;
+  width: 267px;
+}
+
+.card-add:hover {
+  border-bottom: 2px solid #3a0202;
+  cursor: pointer;
+  background-color: #e2e2e2;
+}
+
+.mt-c {
+  margin-top: 63px;
+}
+
+.menu-head {
+  height: 170px;
+  width: 100%;
+  background-color: #000000;
+}
+
+@media only screen and (max-width: 1229px) {
+  .menu-grid {
+    grid-template-columns: 1fr 1fr 1fr ;
+  }
+  .card-add {
+    margin-left: auto;
+    margin-right: auto;
+    width: 270px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .canc-sc {
+    overflow-y: hidden;
+  }
+}
+
+@media only screen and (max-width: 998px) {
+  .menu-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .card-add {
+    width: 270px;
+  }
+
+}
+
+@media only screen and (max-width: 679px) {
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+  .card-add {
+    width: 270px;
+  }
+  .menu-head {
+    height: 200px;
+  }
+  .big-font {
+    font-size: 60px;
+  }
+
+}
+
+@media only screen and (max-width: 580px) {
+  .control {
+    display: flex;
+    flex-direction: column;
+  }
+}
